@@ -31,7 +31,7 @@ public class EventCategoryController {
     public String displayAllEvents(Model model) {
         model.addAttribute("title", "All Events");
         model.addAttribute("events", eventCategoryRepository.findAll());
-        return "eventsCategories/index";
+        return "eventCategories/index";
     }
 
     @GetMapping("create")
